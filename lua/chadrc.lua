@@ -11,7 +11,7 @@ M.ui = {
       { "󰈙 Recent Files", "Spc f o", "Telescope oldfiles" },
       { "󰈭 Find Word", "Spc f w", "Telescope live_grep" },
       { " Mappings", "Spc c h", "NvCheatsheet" },
-      { " Config", "Spc s", "cd ~/.config/nvim/lua/ | e chadrc.lua" },
+      { " Config", "Spc s", "cd ~/.config/nvim/ | e init.lua" },
     },
   },
   statusline = {
