@@ -4,8 +4,11 @@ require "nvchad.mappings"
 
 local map = vim.keymap.set
 
-map("n", ";", ":", { desc = "CMD enter command mode" })
+-- map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
+map("n", "<leader>ru", "<cmd> :RunCode <CR>")
+map("n", "<leader>to", "<cmd> :Trouble <CR>")
+map("n", "<leader>tc", "<cmd> :TroubleClose <CR>")
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
 
@@ -21,18 +24,18 @@ M.disabled = {}
 --     ["<C-l>"] = { "<cmd> TmuxNavigateRight <CR>", "window right" },
 --   },
 -- }
-M.resize = {
-  n = {
-    ["<A-->"] = {
-      "<cmd> resize -1 <CR>",
-    },
-    ["<A-=>"] = {
-      "<cmd> resize +1 <CR>",
-    },
-    ["<A-.>"] = { "<cmd>:vertical resize +1 <CR>", "Vertical resize increase" },
-    ["<A-,>"] = { "<cmd>:vertical resize -1 <CR>", "Vertical resize decrease" },
-  },
-}
+-- M.resize = {
+--   n = {
+--     ["<A-->"] = {
+--       "<cmd> resize -1 <CR>",
+--     },
+--     ["<A-=>"] = {
+--       "<cmd> resize +1 <CR>",
+--     },
+--     ["<A-.>"] = { "<cmd>:vertical resize +1 <CR>", "Vertical resize increase" },
+--     ["<A-,>"] = { "<cmd>:vertical resize -1 <CR>", "Vertical resize decrease" },
+--   },
+-- }
 
 M.coderunner = {
   n = {

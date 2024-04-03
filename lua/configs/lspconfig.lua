@@ -60,11 +60,3 @@ lspconfig.rust_analyzer.setup {
   },
 }
 
-lspconfig.verible.setup {
-  cmd = { "verible-verilog-ls", "--rules_config_search" },
-  filetypes = {
-    "verilog",
-    "systemverilog",
-  },
-  single_file_support = true,
-}
