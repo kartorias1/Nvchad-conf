@@ -23,7 +23,8 @@ local servers = {
   "rust_analyzer",
   "pylsp",
   "html",
-  "veridian"
+  "veridian",
+  "matlab_ls"
 }
 
 for _, lsp in ipairs(servers) do
@@ -44,19 +45,19 @@ lspconfig.lua_ls.setup {
   },
 }
 
-lspconfig.rust_analyzer.setup {
-  settings = {
-    ["rust_analyzer"] = {
-      completion = {
-        autoimport = {
-          enable = true,
-        },
-
-        autoself = {
-          enable = true,
-        },
-      },
-    },
-  },
-}
+-- lspconfig.rust_analyzer.setup {
+--   settings = {
+--     ["rust_analyzer"] = {
+--       completion = {
+--         autoimport = {
+--           enable = true,
+--         },
+--
+--         autoself = {
+--           enable = true,
+--         },
+--       },
+--     },
+--   },
+-- }
 
