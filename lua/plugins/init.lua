@@ -11,7 +11,7 @@ local plugins = {
 
   -- Override plugin definition options
   { "nvim-tree/nvim-tree.lua", opts = overrides.nvimtree },
-  {"NvChad/nvterm", opts = overrides.nvterm},
+  { "NvChad/nvterm", opts = overrides.nvterm },
 
   {
     "neovim/nvim-lspconfig",
@@ -81,6 +81,19 @@ local plugins = {
     config = function()
       require("nvim-surround").setup()
     end,
+  },
+  {
+    "norcalli/nvim-colorizer.lua",
+    lazy = false,
+    config = function()
+      require("nvim-surround").setup()
+    end,
+  },
+
+  {
+    "pmizio/typescript-tools.nvim",
+    dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
+    opts = {},
   },
 }
 
