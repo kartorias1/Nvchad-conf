@@ -23,7 +23,8 @@ local servers = {
   "rust_analyzer",
   "pylsp",
   "html",
-  "veridian",
+  "verible",
+  -- "veridian",
   "matlab_ls"
 }
 

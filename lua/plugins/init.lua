@@ -64,7 +64,8 @@ local plugins = {
 
   {
     "folke/trouble.nvim",
-    lazy = false,
+    opts = {},
+    cmd = "Trouble",
     requires = "kyazdani42/nvim-web-devicons",
   },
 
