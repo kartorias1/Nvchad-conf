@@ -55,7 +55,7 @@ M.symbols_outline = {
 ----- Override mappings -----
 M.nvterm = {
   n = {
-    ["<A-S-i>"] = {
+    ["<leader>fi"] = {
       function()
         require("nvterm.terminal").new "float"
       end,

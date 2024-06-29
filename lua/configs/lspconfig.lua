@@ -23,9 +23,9 @@ local servers = {
   "rust_analyzer",
   "pylsp",
   "html",
-  "verible",
-  -- "veridian",
-  "matlab_ls"
+  "veridian",
+  "matlab_ls",
+  "zls",
 }
 
 for _, lsp in ipairs(servers) do
@@ -61,4 +61,3 @@ lspconfig.lua_ls.setup {
 --     },
 --   },
 -- }
-

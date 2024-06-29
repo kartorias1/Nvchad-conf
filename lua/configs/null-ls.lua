@@ -1,7 +1,7 @@
 local null_ls = require "null-ls"
 
 local formatting = null_ls.builtins.formatting
-local lint = null_ls.builtins.diagnostics
+local diagnostics = null_ls.builtins.diagnostics
 
 local sources = {
 
@@ -11,7 +11,7 @@ local sources = {
 
   -- Lua
   formatting.stylua,
-  lint.luacheck,
+  diagnostics.luacheck,
 
   -- cpp
   formatting.clang_format,
@@ -27,6 +27,10 @@ local sources = {
 
   --verilog
   formatting.verible_verilog_format,
+
+  -- shellscript
+  formatting.shfmt,
+  diagnostics.shellcheck
 }
 
 null_ls.setup {
